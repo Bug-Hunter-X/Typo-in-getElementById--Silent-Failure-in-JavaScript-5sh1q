@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Bug</title>
+</head>
+<body>
+  <div id="myDiv">
+    This text should be visible.
+  </div>
+
+  <script>
+    //Incorrect way to access an element and change its content. 
+    //The error is in the way we're accessing and modifying the element's text content.
+    document.getElementByIdx("myDiv").textContent = "Text changed!"; 
+  </script>
+</body>
+</html>
